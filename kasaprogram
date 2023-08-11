@@ -1,0 +1,33 @@
+package giris;
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+
+        Scanner k = new Scanner(System.in);
+        double armutKilo, elmaKilo, domatesKilo, muzKilo, patlicanKilo;
+        double armutFiyat = 2.14, elmaFiyat = 3.67, domatesFiyat = 1.11, muzFiyat = 0.95, patlicanFiyat = 5.0;
+        double toplamFiyat;
+
+        System.out.print("Armut kaç kilo: ");
+        armutKilo = k.nextInt();
+
+        System.out.print("Elma kaç kilo: ");
+        elmaKilo = k.nextInt();
+
+        System.out.print("Domates kaç kilo: ");
+        domatesKilo = k.nextInt();
+
+        System.out.print("Muz kaç kilo: ");
+        muzKilo = k.nextInt();
+
+        System.out.print("Patlıcan kaç kilo: ");
+        patlicanKilo = k.nextInt();
+
+        toplamFiyat = (armutKilo * armutFiyat) + (elmaKilo * elmaFiyat) + (domatesKilo * domatesFiyat) +
+                (muzKilo * muzFiyat) + (patlicanKilo * patlicanFiyat);
+
+        System.out.println("Toplam fiyat = " + toplamFiyat);
+
+
+    }
+}
